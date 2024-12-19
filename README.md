@@ -31,19 +31,23 @@ $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/2.png)
 Checking the status of MariaDB inside EC2 instance
+
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/3.png)
 Webpage details
+
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/4.png)
 Reviewing Databases and checking the tables inside of café_db
 
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/5.png)
 Taking backup of the café_db database
 
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/6.png)
 Modifying inbound rule to allow port 3306 and giving source as security group of EC2 instance
