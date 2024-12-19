@@ -15,11 +15,11 @@ This project demonstrates the process of migrating the database of a café appli
 - AWS Secrets Manager
 
 ## Steps:
-•	Create an RDS database instance.
-•	Export data from a MariaDB database by using mysqldump.
-•	Connect an SQL client to an RDS database.
-•	Migrate data from a MariaDB database that runs on an EC2 instance to an RDS database instance.
-•	Configure a web application to use the new RDS database instance for data storage
-• Test the application to ensure it is working with the new database.
+- Create an RDS database instance.
+- Export data from a MariaDB database by using mysqldump.
+- Connect an SQL client to an RDS database.
+- Migrate data from a MariaDB database that runs on an EC2 instance to an RDS database instance.
+- Configure a web application to use the new RDS database instance for data storage
+- Test the application to ensure it is working with the new database.
 
 
