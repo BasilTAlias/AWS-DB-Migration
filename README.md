@@ -27,15 +27,15 @@ This project demonstrates the process of migrating the database of a café appli
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/1.png)
 Created a database instance under Amazon RDS
 
-
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/2.png)
 Checking the status of MariaDB inside EC2 instance
-
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/3.png)
 Webpage details
-
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/4.png)
 Reviewing Databases and checking the tables inside of café_db
