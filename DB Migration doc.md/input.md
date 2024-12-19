@@ -1,6 +1,3 @@
-<img src="./i0bmwwpg.png"
-style="width:6.26805in;height:1.16667in" />
-
 **Scenario**
 
 The café currently uses a single Amazon Elastic Compute Cloud (Amazon
@@ -36,7 +33,8 @@ database.
 > data storage
 
 **Screenshots**
-
+<img src="./i0bmwwpg.png"
+style="width:6.26805in;height:1.16667in" />
 *Created* *a* *database* *instance* *under* *Amazon* *RDS*
 
 <img src="./d4oxe2vw.png"
