@@ -58,44 +58,62 @@ $~$
 
 Modifying inbound rule to allow port 3306 and giving source as security group of EC2 instance
 
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/7.png)
- Copying endpoint of RDS database
 
+Copying endpoint of RDS database
+
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/8.png)
+
 3306 port is open
 
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/9.png)
+
 Connecting to RDS database and reviewing the available databases
 
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/10.png)
+
 Importing the Café_db backup to RDS Database
 
+$~$
 
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/11.png)
+
 Secrets Manager details
 
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/12.png)
+
 Stopping the MariaDB service inside the EC2 instance
 
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/13.png)
+
 Accessing the webpage 
 
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/14.png)
+
 Architecture diagram details before migration
 
+$~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/15.png)
+
 Architecture diagram details after migration 
 
-
+$~$
 
 ## Conclusion
 - Created an RDS database instance
