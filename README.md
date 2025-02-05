@@ -1,50 +1,77 @@
-# Café Application Database Migration
+# Café Application Database Migration to Amazon RDS
 
-This project demonstrates the process of migrating the database of a café application from a local EC2 instance to Amazon RDS. The project includes:
+This project demonstrates the migration of a café application's database from a local EC2 instance to Amazon RDS. The migration process includes exporting data from MariaDB on EC2, importing it into Amazon RDS, updating the application to use the new RDS endpoint, and verifying the application's functionality post-migration.
 
-- Migrating the database from EC2 to RDS.
-- Updating the application to use the new RDS endpoint.
-- Stopping the EC2-based MariaDB database.
-- Testing the application to ensure data is intact and the application is working with RDS.
+## Project Overview
 
-## Technologies Used:
-- AWS EC2
-- AWS RDS
-- PHP
-- MariaDB
-- AWS Secrets Manager
+### Key Tasks:
+1. **Create an RDS Database Instance**:
+   - Set up an Amazon RDS instance to host the café application database.
 
-## Steps:
-- Create an RDS database instance.
-- Export data from a MariaDB database by using mysqldump.
-- Connect an SQL client to an RDS database.
-- Migrate data from a MariaDB database that runs on an EC2 instance to an RDS database instance.
-- Configure a web application to use the new RDS database instance for data storage
-- Test the application to ensure it is working with the new database.
+2. **Export Data from EC2 MariaDB**:
+   - Use `mysqldump` to export the database from the EC2 instance.
+
+3. **Migrate Data to RDS**:
+   - Import the exported data into the RDS database.
+
+4. **Update Application Configuration**:
+   - Modify the application to use the RDS endpoint for database connectivity.
+
+5. **Test the Application**:
+   - Verify that the application functions correctly with the new RDS database.
+
+## Technologies Used
+- **AWS EC2**: Hosted the original MariaDB database.
+- **Amazon RDS**: Hosted the migrated database.
+- **PHP**: Used for the café application.
+- **MariaDB**: Database management system.
+- **AWS Secrets Manager**: Securely managed database credentials.
+
+## Steps
+
+### 1. Create an RDS Database Instance
+- Set up an Amazon RDS instance with MariaDB.
+
+### 2. Export Data from EC2 MariaDB
+- Use the `mysqldump` command to create a backup of the `café_db` database.
+
+### 3. Migrate Data to RDS
+- Connect to the RDS instance using an SQL client.
+- Import the backup file into the RDS database.
+
+### 4. Update Application Configuration
+- Modify the application's database connection settings to use the RDS endpoint.
+- Store database credentials securely using AWS Secrets Manager.
+
+### 5. Test the Application
+- Stop the MariaDB service on the EC2 instance.
+- Verify that the application functions correctly with the RDS database.
+
+---
 
 ## Screenshots
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/1.png)
 
-Created a database instance under Amazon RDS
+Created RDS Database Instance
 
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/2.png)
 
-Checking the status of MariaDB inside EC2 instance
+Checking MariaDB Status on EC2
 
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/3.png)
 
-Webpage details
+Café Application Webpage
 
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/4.png)
 
-Reviewing Databases and checking the tables inside of café_db
+Reviewing Databases and Tables
 
 $~$
 
@@ -68,13 +95,13 @@ $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/8.png)
 
-3306 port is open
+Verifying Open Port 3306
 
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/9.png)
 
-Connecting to RDS database and reviewing the available databases
+Connecting to RDS and Reviewing Databases
 
 $~$
 
@@ -87,40 +114,41 @@ $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/11.png)
 
-Secrets Manager details
+AWS Secrets Manager Configuration
 
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/12.png)
 
-Stopping the MariaDB service inside the EC2 instance
+Stopping MariaDB on EC2 Instance
 
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/13.png)
 
-Accessing the webpage 
+Accessing the Webpage Post-Migration
 
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/14.png)
 
-Architecture diagram details before migration
+Architecture Diagram (Before Migration)
 
 $~$
 
 ![Alt text of the image](https://github.com/BasilTAlias/AWS-DB-Migration/blob/main/images/15.png)
 
-Architecture diagram details after migration 
+Architecture Diagram (After Migration)
 
 $~$
 
 ## Conclusion
-- Created an RDS database instance
-- Exported data from a MariaDB database by using mysqldump
-- Connected a SQL client to an RDS database.
-- Migrated data from a MariaDB database that runs on an EC2 instance to an RDS database instance
-- Configured a web application to use the new RDS database instance for data storage
+
+- Successfully created an **Amazon RDS** database instance.
+- Exported data from a **MariaDB** database using `mysqldump`.
+- Connected an **SQL client** to the RDS database.
+- Migrated data from an EC2-hosted **MariaDB** database to RDS.
+- Configured the web application to use **Amazon RDS** as its database backend.
 
 
 
