@@ -151,4 +151,14 @@ $~$
 - Configured the web application to use **Amazon RDS** as its database backend.
 
 
+---
 
+📝 Medium Article
+
+I also wrote a Medium article that walks through this project step-by-step:
+
+Title: From EC2 to RDS: Migrating a Production Database on AWS
+
+Link: https://medium.com/@basiltaliaz/from-ec2-to-rds-migrating-a-production-database-on-aws-5498b1e64fb7
+
+---
